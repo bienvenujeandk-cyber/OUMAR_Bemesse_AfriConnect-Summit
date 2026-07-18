@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Intervenants</title><link rel="stylesheet" href="css/style.css"></head>
-<body data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intervenants | AfriConnect Summit 2026</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
 <header class="site-header">
   <nav class="navbar">
     <a class="logo" href="index.html">AfriConnect Summit 2026</a>
@@ -11,17 +18,28 @@
       <a href="programme.html">Programme</a>
       <a href="intervenants.html">Intervenants</a>
       <a href="contact.html">Contact</a>
-            <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">☾</button>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">☾</button>
     </div>
   </nav>
 </header>
-<main><section><h1>Intervenants</h1><p>Découvrez nos intervenants.</p></section></main>
+
+<main>
+
+<section class="inner-hero"><h1>Nos intervenants</h1><p>Accueil &gt; Intervenants</p></section>
+<section class="section"><div class="filters"><button class="filter active" data-filter="Tous">Tous</button><button class="filter" data-filter="IA & Tech">IA & Tech</button><button class="filter" data-filter="Business">Business</button><button class="filter" data-filter="Design">Design</button><button class="filter" data-filter="Data">Data</button></div>
+<div class="speaker-grid speakers-list"><article class="speaker-card" data-category="IA & Tech"><div class="avatar">AD</div><h3>Amina Diallo</h3><p>IA & Tech · Sénégal</p></article><article class="speaker-card" data-category="Business"><div class="avatar">JK</div><h3>Jean Koffi</h3><p>Business · Côte d'Ivoire</p></article><article class="speaker-card" data-category="Design"><div class="avatar">SM</div><h3>Sarah Mensah</h3><p>Design · Ghana</p></article><article class="speaker-card" data-category="Data"><div class="avatar">DO</div><h3>David Okoro</h3><p>Data · Nigeria</p></article><article class="speaker-card" data-category="IA & Tech"><div class="avatar">GW</div><h3>Grace Wanjiku</h3><p>IA & Tech · Kenya</p></article><article class="speaker-card" data-category="Business"><div class="avatar">KM</div><h3>Kwame Mensah</h3><p>Business · Ghana</p></article><article class="speaker-card" data-category="Data"><div class="avatar">OB</div><h3>Ousmane Ba</h3><p>Data · Sénégal</p></article><article class="speaker-card" data-category="Design"><div class="avatar">FN</div><h3>Fatou Ndiaye</h3><p>Design · Sénégal</p></article><article class="speaker-card" data-category="IA & Tech"><div class="avatar">NH</div><h3>Nadia Hassan</h3><p>IA & Tech · Égypte</p></article></div></section>
+
+</main>
+
 <footer class="site-footer">
   <div><h3>AfriConnect Summit</h3><p>Le rendez-vous de l'innovation africaine.</p></div>
   <div><h3>Liens rapides</h3><a href="programme.html">Programme</a><a href="intervenants.html">Intervenants</a></div>
   <div><h3>Réseaux sociaux</h3><p>LinkedIn · Instagram · X</p></div>
   <p class="copyright">© <span id="current-year"></span> AfriConnect Summit 2026</p>
 </footer>
+<button id="back-to-top" class="back-to-top" aria-label="Retour en haut">↑</button>
 
+<script src="js/main.js"></script>
+<script src="js/intervenants.js"></script>
 </body>
 </html>

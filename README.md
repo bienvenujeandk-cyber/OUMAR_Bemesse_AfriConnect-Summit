@@ -1,3 +1,3 @@
 # AfriConnect Summit 2026
 
-Commit 5 : programme avec onglets JavaScript et thématiques.
+Commit 6 : grille de 9 intervenants et filtrage dynamique.

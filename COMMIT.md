@@ -1,1 +1,1 @@
-feat: add interactive conference program tabs and themes
+feat: add speakers grid and dynamic category filtering

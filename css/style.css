@@ -52,3 +52,5 @@ main { min-height:70vh; padding:7rem 5% 4rem; }
 .day-content { display:none; overflow-x:auto; }.day-content.active { display:block; }
 table { width:100%; border-collapse:collapse; min-width:650px; } th,td { padding:1rem; border:1px solid var(--border); text-align:left; } tbody tr:nth-child(even){background:var(--surface)}
 .topic-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; }.topic-grid article { padding:2rem; background:var(--surface); border:1px solid var(--border); border-radius:12px; }
+
+.filters { display:flex; justify-content:center; gap:.5rem; flex-wrap:wrap; margin-bottom:2rem; }.filter { padding:.8rem 1rem; border:1px solid var(--border); background:var(--surface); color:var(--text); border-radius:8px; cursor:pointer; }.filter.active { background:var(--primary); color:white; }
