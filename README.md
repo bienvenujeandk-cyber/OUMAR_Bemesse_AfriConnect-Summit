@@ -1,3 +1,3 @@
 # AfriConnect Summit 2026
 
-Commit 4 : JavaScript global, thème persistant, navbar dynamique, menu mobile, animations et retour en haut.
+Commit 5 : programme avec onglets JavaScript et thématiques.

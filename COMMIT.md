@@ -1,1 +1,1 @@
-feat: add global JavaScript interactions and scroll animations
+feat: add interactive conference program tabs and themes

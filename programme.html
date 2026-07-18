@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Programme</title><link rel="stylesheet" href="css/style.css"></head>
-<body data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programme | AfriConnect Summit 2026</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
 <header class="site-header">
   <nav class="navbar">
     <a class="logo" href="index.html">AfriConnect Summit 2026</a>
@@ -11,17 +18,36 @@
       <a href="programme.html">Programme</a>
       <a href="intervenants.html">Intervenants</a>
       <a href="contact.html">Contact</a>
-            <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">☾</button>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">☾</button>
     </div>
   </nav>
 </header>
-<main><section><h1>Programme</h1><p>Découvrez le programme de la conférence.</p></section></main>
+
+<main>
+
+<section class="inner-hero"><h1>Programme</h1><p>Accueil &gt; Programme</p></section>
+<section class="section">
+  <div class="tabs"><button class="tab active" data-day="day1">Jour 1</button><button class="tab" data-day="day2">Jour 2</button><button class="tab" data-day="day3">Jour 3</button></div>
+  <div id="day1" class="day-content active"><h2>Jour 1 — Connexion & Innovation</h2><table><thead><tr><th>Heure</th><th>Session</th><th>Intervenant</th><th>Salle</th></tr></thead><tbody>
+  <tr><td>09:00</td><td>Ouverture</td><td>Amina Diallo</td><td>A</td></tr><tr><td>10:00</td><td>IA en Afrique</td><td>Jean Koffi</td><td>B</td></tr><tr><td>11:30</td><td>Networking</td><td>—</td><td>Hall</td></tr><tr><td>14:00</td><td>Cybersecurity 2030</td><td>Peter N'Diaye</td><td>C</td></tr><tr><td>16:00</td><td>Innovation & Startups</td><td>Sarah Mensah</td><td>A</td></tr></tbody></table></div>
+  <div id="day2" class="day-content"><h2>Jour 2 — Technologie & Business</h2><table><thead><tr><th>Heure</th><th>Session</th><th>Intervenant</th><th>Salle</th></tr></thead><tbody>
+  <tr><td>09:00</td><td>Data & Décision</td><td>David Okoro</td><td>A</td></tr><tr><td>10:30</td><td>Fintech Africaine</td><td>Grace Wanjiku</td><td>B</td></tr><tr><td>12:00</td><td>Pause</td><td>—</td><td>Hall</td></tr><tr><td>14:00</td><td>Entreprendre en Afrique</td><td>Kwame Mensah</td><td>C</td></tr><tr><td>16:00</td><td>Panel investisseurs</td><td>Panel Summit</td><td>A</td></tr></tbody></table></div>
+  <div id="day3" class="day-content"><h2>Jour 3 — Futur & Impact</h2><table><thead><tr><th>Heure</th><th>Session</th><th>Intervenant</th><th>Salle</th></tr></thead><tbody>
+  <tr><td>09:00</td><td>Design du futur</td><td>Sarah Mensah</td><td>A</td></tr><tr><td>10:30</td><td>Cloud & Infrastructure</td><td>Ousmane Ba</td><td>B</td></tr><tr><td>12:00</td><td>Pause</td><td>—</td><td>Hall</td></tr><tr><td>14:00</td><td>Leadership africain</td><td>Fatou Ndiaye</td><td>C</td></tr><tr><td>16:00</td><td>Cérémonie de clôture</td><td>Organisation</td><td>A</td></tr></tbody></table></div>
+</section>
+<section class="section"><h2>Thématiques</h2><div class="topic-grid"><article>🤖<h3>IA & Technologie</h3><p>Les technologies émergentes.</p></article><article>💼<h3>Business</h3><p>Entrepreneuriat et croissance.</p></article><article>🎨<h3>Design</h3><p>Créer des expériences utiles.</p></article><article>📊<h3>Data</h3><p>Transformer les données en décisions.</p></article></div></section>
+
+</main>
+
 <footer class="site-footer">
   <div><h3>AfriConnect Summit</h3><p>Le rendez-vous de l'innovation africaine.</p></div>
   <div><h3>Liens rapides</h3><a href="programme.html">Programme</a><a href="intervenants.html">Intervenants</a></div>
   <div><h3>Réseaux sociaux</h3><p>LinkedIn · Instagram · X</p></div>
   <p class="copyright">© <span id="current-year"></span> AfriConnect Summit 2026</p>
 </footer>
+<button id="back-to-top" class="back-to-top" aria-label="Retour en haut">↑</button>
 
+<script src="js/main.js"></script>
+<script src="js/programme.js"></script>
 </body>
 </html>
