@@ -1,1 +1,1 @@
-feat: add speakers grid and dynamic category filtering
+feat: add registration form validation FAQ accordion and map

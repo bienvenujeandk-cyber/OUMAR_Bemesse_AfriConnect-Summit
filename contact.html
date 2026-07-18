@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Contact</title><link rel="stylesheet" href="css/style.css"></head>
-<body data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | AfriConnect Summit 2026</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
 <header class="site-header">
   <nav class="navbar">
     <a class="logo" href="index.html">AfriConnect Summit 2026</a>
@@ -11,17 +18,41 @@
       <a href="programme.html">Programme</a>
       <a href="intervenants.html">Intervenants</a>
       <a href="contact.html">Contact</a>
-            <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">☾</button>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">☾</button>
     </div>
   </nav>
 </header>
-<main><section><h1>Inscription & Contact</h1><p>Inscrivez-vous à l'événement.</p></section></main>
+
+<main>
+
+<section class="inner-hero"><h1>Inscription & Contact</h1><p>Accueil &gt; Contact</p></section>
+<section class="section contact-layout"><form id="registration-form" novalidate><h2>Inscription</h2>
+<label>Nom complet<input id="fullName" type="text" required><small class="error"></small></label>
+<label>Email<input id="email" type="email" required><small class="error"></small></label>
+<label>Téléphone<input id="phone" type="tel" required><small class="error"></small></label>
+<label>Type de participation<select id="participation" required><option value="">Choisir</option><option>Participant</option><option>Intervenant</option><option>Partenaire</option><option>Sponsor</option><option>Presse</option></select><small class="error"></small></label>
+<label>Pays africain<select id="country" required><option value="">Choisir</option><option>Sénégal</option><option>Centrafrique</option><option>Cameroun</option><option>Côte d'Ivoire</option><option>Ghana</option><option>Nigeria</option><option>Kenya</option><option>Afrique du Sud</option><option>Maroc</option><option>Égypte</option><option>Rwanda</option><option>Tanzanie</option></select><small class="error"></small></label>
+<label>Message / Motivation<textarea id="message" rows="6" required></textarea><small class="error"></small></label>
+<button class="btn" type="submit">Envoyer mon inscription</button><div id="success-message" class="success"></div></form>
+<aside><h2>Contactez-nous</h2><p>Une question sur le sommet ? Notre équipe vous répond.</p><div class="map"><iframe title="Carte de Dakar" src="https://www.google.com/maps?q=Dakar%20Senegal&output=embed" loading="lazy"></iframe></div></aside></section>
+<section class="section"><h2>FAQ</h2><div class="faq">
+<details><summary>Quand aura lieu la conférence ?</summary><p>Du 15 au 17 octobre 2026.</p></details>
+<details><summary>Qui peut participer ?</summary><p>Étudiants, professionnels, entrepreneurs et passionnés.</p></details>
+<details><summary>Le programme est-il gratuit ?</summary><p>Certains événements sont gratuits, selon le type de participation.</p></details>
+<details><summary>Comment devenir sponsor ?</summary><p>Utilisez le formulaire et sélectionnez Sponsor.</p></details>
+<details><summary>Où se déroule le sommet ?</summary><p>À Dakar, au Sénégal.</p></details></div></section>
+
+</main>
+
 <footer class="site-footer">
   <div><h3>AfriConnect Summit</h3><p>Le rendez-vous de l'innovation africaine.</p></div>
   <div><h3>Liens rapides</h3><a href="programme.html">Programme</a><a href="intervenants.html">Intervenants</a></div>
   <div><h3>Réseaux sociaux</h3><p>LinkedIn · Instagram · X</p></div>
   <p class="copyright">© <span id="current-year"></span> AfriConnect Summit 2026</p>
 </footer>
+<button id="back-to-top" class="back-to-top" aria-label="Retour en haut">↑</button>
 
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
 </body>
 </html>
