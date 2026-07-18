@@ -1,0 +1,8 @@
+@media (max-width: 700px) {
+  .menu-toggle { display:block; }
+  .nav-links { display:none; position:absolute; top:100%; left:0; right:0; padding:1rem 5%; background:var(--header); flex-direction:column; align-items:flex-start; }
+  .nav-links.open { display:flex; }
+}
+
+@media (max-width:900px){.stats-grid,.speaker-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:700px){.features,.sponsors{flex-direction:column}.stats-grid,.speaker-grid{grid-template-columns:1fr}.sponsor{text-align:center}}

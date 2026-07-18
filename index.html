@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Accueil</title><link rel="stylesheet" href="css/style.css"></head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil | AfriConnect Summit 2026</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
 <body>
+
 <header class="site-header">
   <nav class="navbar">
     <a class="logo" href="index.html">AfriConnect Summit 2026</a>
@@ -11,16 +18,48 @@
       <a href="programme.html">Programme</a>
       <a href="intervenants.html">Intervenants</a>
       <a href="contact.html">Contact</a>
-      </div>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">☾</button>
+    </div>
   </nav>
 </header>
-<main><section><h1>Bienvenue à AfriConnect Summit 2026</h1><p>La conférence africaine de l'innovation.</p></section></main>
+
+<main>
+
+<section class="hero">
+  <div class="hero-content reveal fade-in">
+    <p class="eyebrow">15 — 17 OCTOBRE 2026 · DAKAR, SÉNÉGAL</p>
+    <h1>L'Afrique innove.<br>L'Afrique connecte.</h1>
+    <p>Le sommet qui rassemble les talents, les idées et les technologies qui construisent l'Afrique de demain.</p>
+    <div class="cta-group"><a class="btn" href="programme.html">Découvrir le programme</a><a class="btn secondary" href="contact.html">S'inscrire maintenant</a></div>
+    <div id="countdown" class="countdown"><div><strong id="days">00</strong><span>Jours</span></div><div><strong id="hours">00</strong><span>Heures</span></div><div><strong id="minutes">00</strong><span>Minutes</span></div><div><strong id="seconds">00</strong><span>Secondes</span></div></div>
+  </div>
+</section>
+<section class="section reveal"><h2>AfriConnect en chiffres</h2><div class="stats-grid">
+  <div class="stat-card"><strong class="counter" data-target="1200">0</strong><span>Participants</span></div>
+  <div class="stat-card"><strong class="counter" data-target="48">0</strong><span>Intervenants</span></div>
+  <div class="stat-card"><strong class="counter" data-target="3">0</strong><span>Jours</span></div>
+  <div class="stat-card"><strong class="counter" data-target="12">0</strong><span>Pays</span></div>
+</div></section>
+<section class="section reveal"><h2>Pourquoi participer ?</h2><div class="features"><article>🤝<h3>Réseautage</h3><p>Rencontrez les talents et décideurs africains.</p></article><article>💡<h3>Innovation</h3><p>Découvrez les technologies qui transforment le continent.</p></article><article>🚀<h3>Opportunités</h3><p>Développez vos projets et votre carrière.</p></article></div></section>
+<section class="section reveal"><h2>Intervenants vedettes</h2><div class="speaker-grid">
+  <article class="speaker-card"><div class="avatar">AD</div><h3>Amina Diallo</h3><p>IA & Innovation · Sénégal</p></article>
+  <article class="speaker-card"><div class="avatar">JK</div><h3>Jean Koffi</h3><p>Business · Côte d'Ivoire</p></article>
+  <article class="speaker-card"><div class="avatar">SM</div><h3>Sarah Mensah</h3><p>Design · Ghana</p></article>
+  <article class="speaker-card"><div class="avatar">PN</div><h3>Peter N'Diaye</h3><p>Cybersecurity · Sénégal</p></article>
+</div><a class="btn" href="intervenants.html">Voir tous les intervenants</a></section>
+<section class="section reveal"><h2>Nos sponsors</h2><div class="sponsors"><div class="sponsor gold">OR</div><div class="sponsor silver">ARGENT</div><div class="sponsor bronze">BRONZE</div></div></section>
+
+</main>
+
 <footer class="site-footer">
   <div><h3>AfriConnect Summit</h3><p>Le rendez-vous de l'innovation africaine.</p></div>
   <div><h3>Liens rapides</h3><a href="programme.html">Programme</a><a href="intervenants.html">Intervenants</a></div>
   <div><h3>Réseaux sociaux</h3><p>LinkedIn · Instagram · X</p></div>
   <p class="copyright">© <span id="current-year"></span> AfriConnect Summit 2026</p>
 </footer>
+<button id="back-to-top" class="back-to-top" aria-label="Retour en haut">↑</button>
+
+<script src="js/main.js"></script>
 
 </body>
 </html>
