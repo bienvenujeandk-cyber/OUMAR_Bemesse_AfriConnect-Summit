@@ -1,0 +1,5 @@
+@media (max-width: 700px) {
+  .menu-toggle { display:block; }
+  .nav-links { display:none; position:absolute; top:100%; left:0; right:0; padding:1rem 5%; background:var(--header); flex-direction:column; align-items:flex-start; }
+  .nav-links.open { display:flex; }
+}
