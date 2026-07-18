@@ -1,1 +1,1 @@
-feat: build complete homepage with hero statistics speakers and sponsors
+feat: add global JavaScript interactions and scroll animations

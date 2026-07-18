@@ -38,3 +38,9 @@ main { min-height:70vh; padding:7rem 5% 4rem; }
 .sponsors { display:flex; align-items:center; justify-content:center; gap:1rem; }
 .sponsor { padding:2rem 4rem; border-radius:10px; font-weight:bold; }
 .gold { font-size:1.5rem; background:#e5c76b; }.silver { background:#cbd1d6; }.bronze { background:#b98157; }
+
+.navbar.scrolled { box-shadow:0 4px 20px #0002; background:var(--header); }
+.back-to-top { position:fixed; right:1.5rem; bottom:1.5rem; opacity:0; pointer-events:none; border:0; border-radius:50%; width:48px; height:48px; background:var(--primary); color:white; font-size:1.3rem; cursor:pointer; transition:.3s; }
+.back-to-top.show { opacity:1; pointer-events:auto; }
+.reveal { opacity:0; transform:translateY(30px); transition:.7s ease; }
+.reveal.visible { opacity:1; transform:none; }
