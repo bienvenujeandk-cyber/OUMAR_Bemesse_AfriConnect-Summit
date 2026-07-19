@@ -1,53 +1,187 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="no-js">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Programme | AfriConnect Summit 2026</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Découvrez le programme complet d'AfriConnect Summit 2026, sur 3 jours à Dakar." />
+    <title>Programme – AfriConnect Summit 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script>document.documentElement.classList.replace('no-js','js');</script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="site-header">
-  <nav class="navbar">
-    <a class="logo" href="index.html">AfriConnect Summit 2026</a>
-    <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
-    <div class="nav-links">
-      <a href="index.html">Accueil</a>
-      <a href="programme.html">Programme</a>
-      <a href="intervenants.html">Intervenants</a>
-      <a href="contact.html">Contact</a>
-      <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">☾</button>
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo" aria-label="AfriConnect Summit — retour à l'accueil">
+                <svg class="logo-mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                 
+                    <line class="lm-link" x1="20" y1="20" x2="8" y2="30" />
+                  
+                    <line class="lm-link" x1="20" y1="20" x2="32" y2="30" />
+                 
+                    <line class="lm-link" x1="20" y1="20" x2="20" y2="7" />
+                    <circle class="lm-node" cx="8" cy="30" r="4" />
+                
+                
+                
+                
+                
+                    <circle class="lm-node" cx="32" cy="30" r="4" />
+                    <circle class="lm-node" cx="20" cy="7" r="4" />
+                    <circle class="lm-node lm-hub" cx="20" cy="20" r="5.5" />
+                </svg>
+                <span class="logo-text">
+                    <span class="logo-wordmark"><span class="logo-afri">Afri</span>Connect</span>
+                    <span class="logo-tagline">Summit · 2026</span>
+                </span>
+            </a>
+            <nav aria-label="Navigation principale">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="programme.html" class="active" aria-current="page">Programme</a></li>
+                    <li><a href="intervenants.html">Intervenants</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><button class="theme-toggle" id="themeToggle" aria-label="Basculer le mode sombre"><i class="bi bi-moon-fill"></i></button></li>
+                </ul>
+                <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+            </nav>
+        </div>
+    </header>
+
+    
+    
+    
+    
+    <!-- ===== HERO INTERNE ===== -->
+    <section class="page-hero">
+        <canvas class="hero-canvas" data-max-particles="35" aria-hidden="true"></canvas>
+        <h1>Programme de la conférence</h1>
+        <p class="breadcrumb"><a href="index.html">Accueil</a> &gt; Programme</p>
+    </section>
+
+  
+  
+  
+  
+  
+  
+    <!-- ===== ONGLETS ===== -->
+    <div class="container">
+        <div class="tabs segmented" id="dayTabs">
+            <span class="segmented-glow" aria-hidden="true"></span>
+            <button class="tab-btn active" data-tab="day1"><i class="bi bi-calendar3"></i> Jour 1 – 15/09</button>
+            <button class="tab-btn" data-tab="day2"><i class="bi bi-calendar3"></i> Jour 2 – 16/09</button>
+            <button class="tab-btn" data-tab="day3"><i class="bi bi-calendar3"></i> Jour 3 – 17/09</button>
+        </div>
+
+       
+       
+       
+       
+       
+        <!-- Jour 1 -->
+        <div id="day1" class="tab-content active">
+            <table class="schedule-table">
+                <thead><tr><th>Heure</th><th>Session</th><th>Intervenant</th><th>Salle</th></tr></thead>
+                <tbody>
+                    <tr><td>09:00</td><td>Keynote : L'IA au service de l'Afrique</td><td>Dr. Amina Diallo</td><td>Amphithéâtre A</td></tr>
+          <tr><td>10:30</td><td>Panneau : Financement des startups</td><td>Mamadou Koné, Sophie Mboup</td><td>Salle 101</td></tr>
+         <tr><td>12:00</td><td>Atelier UX/UI design thinking</td><td>Fatima El Idrissi</td><td>Lab 2</td></tr>
+          <tr><td>14:00</td><td>Table ronde : Data et souveraineté</td><td>Cheick Oumar</td><td>Amphithéâtre B</td></tr>
+         <tr><td>16:00</td><td>Networking & expo startups</td><td>—</td><td>Espace Expo</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Jour 2 -->
+        <div id="day2" class="tab-content">
+            <table class="schedule-table">
+                <thead><tr><th>Heure</th><th>Session</th><th>Intervenant</th><th>Salle</th></tr></thead>
+                <tbody>
+      <tr><td>09:00</td><td>Keynote : Blockchain et confiance numérique</td><td>Pr. Issa Traoré</td><td>Amphithéâtre A</td></tr>
+             <tr><td>10:30</td><td>Panneau : EdTech en Afrique</td><td>Mariam Diallo, Jean-Claude</td><td>Salle 102</td></tr>
+     <tr><td>14:00</td><td>Table ronde : Cyber sécurité</td><td>Nadia Benali</td><td>Salle 103</td></tr>
+        <tr><td>16:00</td><td>Pitch de startups</td><td>—</td><td>Amphithéâtre B</td></tr>
+       </tbody>
+    </table>
+     </div>
+
+        <!-- Jour 3 -->
+        <div id="day3" class="tab-content">
+            <table class="schedule-table">
+                <thead><tr><th>Heure</th><th>Session</th><th>Intervenant</th><th>Salle</th></tr></thead>
+                <tbody>
+        <tr><td>09:00</td><td>Keynote : L'entrepreneuriat tech durable</td><td>Mamadou Koné</td><td>Amphithéâtre A</td></tr>
+                    <tr><td>10:30</td><td>Panneau : Femmes dans la tech</td><td>Fatima, Amina, Sophie</td><td>Salle 201</td></tr>
+         <tr><td>12:00</td><td>Atelier : Low-code / No-code</td><td>Cheick Oumar</td><td>Lab 2</td></tr>
+          <tr><td>14:00</td><td>Clôture : Discours et perspectives</td><td>Comité d'organisation</td><td>Amphithéâtre A</td></tr>
+           <tr><td>16:00</td><td>Remise des prix et cocktail</td><td>—</td><td>Espace Expo</td></tr>
+                </tbody>
+          
+            </table>
+        </div>
     </div>
-  </nav>
-</header>
 
-<main>
+   
+   
+   
+    <!-- ===== THÉMATIQUES ===== -->
+    <section class="themes-section">
+        <div class="container">
+            <span class="section-eyebrow">Ce qui vous attend</span>
+      
+          <h2 class="section-title">Thématiques 2026</h2>
+            <p class="section-subtitle">Quatre axes structurent les keynotes, ateliers et tables rondes du sommet.</p>
+      <div class="themes-grid">
+                <div class="theme-item fade-in">
+              <div class="theme-icon"><i class="bi bi-cpu"></i></div>
+           <h3>IA & Machine Learning</h3>
+          <p>Algorithmes, données et applications concrètes pour l'Afrique.</p>
+                </div>
+                <div class="theme-item fade-in">
+         <div class="theme-icon"><i class="bi bi-briefcase"></i></div>
+          <h3>Business & Innovation</h3>
+             <p>Modèles économiques, financement et stratégie de croissance.</p>
+                </div>
+                <div class="theme-item fade-in">
+        <div class="theme-icon"><i class="bi bi-palette"></i></div>
+          <h3>Design & Expérience</h3>
+        <p>UX/UI, design de services et créativité numérique.</p>
+                </div>
+                <div class="theme-item fade-in">
+      <div class="theme-icon"><i class="bi bi-bar-chart"></i></div>
+        <h3>Data & Analytique</h3>
+        <p>Big data, visualisation et prise de décision éclairée.</p>
+       </div>
+      </div>
+        </div>
+    </section>
 
-<section class="inner-hero"><h1>Programme</h1><p>Accueil &gt; Programme</p></section>
-<section class="section">
-  <div class="tabs"><button class="tab active" data-day="day1">Jour 1</button><button class="tab" data-day="day2">Jour 2</button><button class="tab" data-day="day3">Jour 3</button></div>
-  <div id="day1" class="day-content active"><h2>Jour 1 — Connexion & Innovation</h2><table><thead><tr><th>Heure</th><th>Session</th><th>Intervenant</th><th>Salle</th></tr></thead><tbody>
-  <tr><td>09:00</td><td>Ouverture</td><td>Amina Diallo</td><td>A</td></tr><tr><td>10:00</td><td>IA en Afrique</td><td>Jean Koffi</td><td>B</td></tr><tr><td>11:30</td><td>Networking</td><td>—</td><td>Hall</td></tr><tr><td>14:00</td><td>Cybersecurity 2030</td><td>Peter N'Diaye</td><td>C</td></tr><tr><td>16:00</td><td>Innovation & Startups</td><td>Sarah Mensah</td><td>A</td></tr></tbody></table></div>
-  <div id="day2" class="day-content"><h2>Jour 2 — Technologie & Business</h2><table><thead><tr><th>Heure</th><th>Session</th><th>Intervenant</th><th>Salle</th></tr></thead><tbody>
-  <tr><td>09:00</td><td>Data & Décision</td><td>David Okoro</td><td>A</td></tr><tr><td>10:30</td><td>Fintech Africaine</td><td>Grace Wanjiku</td><td>B</td></tr><tr><td>12:00</td><td>Pause</td><td>—</td><td>Hall</td></tr><tr><td>14:00</td><td>Entreprendre en Afrique</td><td>Kwame Mensah</td><td>C</td></tr><tr><td>16:00</td><td>Panel investisseurs</td><td>Panel Summit</td><td>A</td></tr></tbody></table></div>
-  <div id="day3" class="day-content"><h2>Jour 3 — Futur & Impact</h2><table><thead><tr><th>Heure</th><th>Session</th><th>Intervenant</th><th>Salle</th></tr></thead><tbody>
-  <tr><td>09:00</td><td>Design du futur</td><td>Sarah Mensah</td><td>A</td></tr><tr><td>10:30</td><td>Cloud & Infrastructure</td><td>Ousmane Ba</td><td>B</td></tr><tr><td>12:00</td><td>Pause</td><td>—</td><td>Hall</td></tr><tr><td>14:00</td><td>Leadership africain</td><td>Fatou Ndiaye</td><td>C</td></tr><tr><td>16:00</td><td>Cérémonie de clôture</td><td>Organisation</td><td>A</td></tr></tbody></table></div>
-</section>
-<section class="section"><h2>Thématiques</h2><div class="topic-grid"><article>🤖<h3>IA & Technologie</h3><p>Les technologies émergentes.</p></article><article>💼<h3>Business</h3><p>Entrepreneuriat et croissance.</p></article><article>🎨<h3>Design</h3><p>Créer des expériences utiles.</p></article><article>📊<h3>Data</h3><p>Transformer les données en décisions.</p></article></div></section>
+   
+   
+   
+   
+   
+   
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+       <div class="footer-col"><h3>AfriConnect Summit</h3><p>15-17 sept 2026 · Dakar</p></div>
+       <div class="footer-col"><h3>Navigation</h3><ul><li><a href="index.html">Accueil</a></li><li><a href="programme.html">Programme</a></li><li><a href="intervenants.html">Intervenants</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h3>Suivez-nous</h3><div class="social-icons"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-twitter-x"></i></a><a href="#"><i class="bi bi-linkedin"></i></a><a href="#"><i class="bi bi-youtube"></i></a></div></div>
+        </div>
+    <div class="footer-bottom"><p>&copy; <span class="current-year">2026</span> AfriConnect Summit. Tous droits réservés.</p></div>
+     </div>
+    </footer>
 
-</main>
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut"><i class="bi bi-chevron-up"></i></button>
 
-<footer class="site-footer">
-  <div><h3>AfriConnect Summit</h3><p>Le rendez-vous de l'innovation africaine.</p></div>
-  <div><h3>Liens rapides</h3><a href="programme.html">Programme</a><a href="intervenants.html">Intervenants</a></div>
-  <div><h3>Réseaux sociaux</h3><p>LinkedIn · Instagram · X</p></div>
-  <p class="copyright">© <span id="current-year"></span> AfriConnect Summit 2026</p>
-</footer>
-<button id="back-to-top" class="back-to-top" aria-label="Retour en haut">↑</button>
-
-<script src="js/main.js"></script>
-<script src="js/programme.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

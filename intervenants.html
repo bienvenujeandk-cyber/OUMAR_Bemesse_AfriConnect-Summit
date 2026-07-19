@@ -1,45 +1,180 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="no-js">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Intervenants | AfriConnect Summit 2026</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rencontrez les intervenants d'AfriConnect Summit 2026 : IA, business, design et data." />
+    <title>Intervenants – AfriConnect Summit 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script>document.documentElement.classList.replace('no-js','js');</script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="site-header">
-  <nav class="navbar">
-    <a class="logo" href="index.html">AfriConnect Summit 2026</a>
-    <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
-    <div class="nav-links">
-      <a href="index.html">Accueil</a>
-      <a href="programme.html">Programme</a>
-      <a href="intervenants.html">Intervenants</a>
-      <a href="contact.html">Contact</a>
-      <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">☾</button>
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo" aria-label="AfriConnect Summit — retour à l'accueil">
+                <svg class="logo-mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <line class="lm-link" x1="20" y1="20" x2="8" y2="30" />
+                   
+               <line class="lm-link" x1="20" y1="20" x2="32" y2="30" />
+                    <line class="lm-link" x1="20" y1="20" x2="20" y2="7" />
+            <circle class="lm-node" cx="8" cy="30" r="4" />
+                    <circle class="lm-node" cx="32" cy="30" r="4" />
+                 <circle class="lm-node" cx="20" cy="7" r="4" />
+                    <circle class="lm-node lm-hub" cx="20" cy="20" r="5.5" />
+                </svg>
+                <span class="logo-text">
+                <span class="logo-wordmark"><span class="logo-afri">Afri</span>Connect</span>
+        
+        
+                <span class="logo-tagline">Summit · 2026</span>
+                </span>
+            </a>
+            <nav aria-label="Navigation principale">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Accueil</a></li>
+                   
+          <li><a href="programme.html">Programme</a></li>
+                 
+                    <li><a href="intervenants.html" class="active" aria-current="page">Intervenants</a></li>
+                
+                    <li><a href="contact.html">Contact</a></li>
+                  
+                  
+                    <li><button class="theme-toggle" id="themeToggle" aria-label="Basculer le mode sombre"><i class="bi bi-moon-fill"></i></button></li>
+                </ul>
+               
+               
+                <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+         
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== HERO INTERNE ===== -->
+    <section class="page-hero">
+      
+        <canvas class="hero-canvas" data-max-particles="35" aria-hidden="true"></canvas>
+       
+       
+        <h1>Nos intervenants</h1>
+       
+       
+       
+       
+       
+        <p class="breadcrumb"><a href="index.html">Accueil</a> &gt; Intervenants</p>
+    </section>
+
+    <!-- ===== FILTRES ===== -->
+    <div class="container">
+        <div class="filter-buttons segmented" id="speakerFilters">
+         
+         
+         
+         
+            <span class="segmented-glow" aria-hidden="true"></span>
+            <button class="filter-btn active" data-filter="all"><i class="bi bi-grid"></i> Tous</button>
+         
+               <button class="filter-btn" data-filter="ai"><i class="bi bi-cpu"></i> IA & Tech</button>
+            <button class="filter-btn" data-filter="business"><i class="bi bi-briefcase"></i> Business</button>
+            <button class="filter-btn" data-filter="design"><i class="bi bi-palette"></i> Design</button>
+                                             <button class="filter-btn" data-filter="data"><i class="bi bi-bar-chart"></i> Data</button>
+        </div>
+
+        <!-- GRILLE 9 intervenants -->
+                        <div class="speakers-full-grid">
+            <!-- 1 -->
+            <div class="speaker-card" data-theme="ai">
+                <img src="https://www.chrhautesenne.be/sites/default/files/styles/large/public/2025-02/Diallo_Aissatou.jpg.webp?h=fc3f5e47&itok=AjhcNFgK" alt="Dr. Amina Diallo">
+                                             <h3>Dr. Filematou DIALLO</h3>
+                   <p>IA & Data Science · Sénégal</p>
+            </div>
+            <!-- 2 -->
+            <div class="speaker-card" data-theme="business">
+                <img src="https://diggers.news/wp-content/uploads/2025/05/Dr-Sega-e1746857872665.jpeg" alt="Mamadou Koné">
+                <h3>Dr. Robert </h3>
+                <p>Entrepreneur · Senegal</p>
+            </div>
+            <!-- 3 -->
+            <div class="speaker-card" data-theme="design">
+                <img src="https://global.ariseplay.com/amg/www.arise.tv/uploads/2021/02/Abdulsamad-Rabiu.jpg" alt="Fatima El Idrissi">
+                <h3>Oumar DIAW</h3>
+                <p>Design UX/UI · Maroc</p>
+            </div>
+            <!-- 4 -->
+            <div class="speaker-card" data-theme="data">
+                <img src="https://senegal7.com/wp-content/uploads/2025/03/Le-Senegal-magnifie-le-theme-de-la-Journee-Mondiale.jpg" alt="Cheick Oumar">
+                <h3>Cheick Oumar</h3>
+                <p>Data Analytics · Mali</p>
+            </div>
+            <!-- 5 -->
+            <div class="speaker-card" data-theme="ai">
+                <img src="https://aacgb.gw/gestao/assets/uploads/files/2e867-idrissa.jpg" alt="Pr. Issa Traoré">
+                <h3>Pr. Idrissa MANE</h3>
+                <p>IA & Robotique · Senegal</p>
+           
+           
+           
+           
+            </div>
+            <!-- 6 -->
+            <div class="speaker-card" data-theme="business">
+                <img src="https://www.ouestaf.com/wp-content/uploads/2023/06/Ousmane-Sonko.jpg" alt="Sophie Mboup">
+                <h3>Ousmane Sonko</h3>
+                <p>Business Angel · Sénégal</p>
+            </div>
+           
+           
+           
+            <!-- 7 -->
+            <div class="speaker-card" data-theme="design">
+                <img src="https://cdn.britannica.com/92/159892-004-8C7B9046/Macky-Sall-2008.jpg" alt="Kofi Mensah">
+                <h3>Macky Sall</h3>
+                <p>Business Jambars · Senegal</p>
+            </div>
+          
+          
+          
+            <!-- 8 -->
+            <div class="speaker-card" data-theme="data">
+                <img src="https://wallpapers.com/images/hd/dashing-oprah-winfrey-m94qfrgfcn47iq5o.jpg" alt="Nadia Benali">
+                <h3>Oprah Winfray</h3>
+                <p>Data Engineer · Newyork</p>
+            </div>
+           
+           
+            <!-- 9 -->
+            <div class="speaker-card" data-theme="business">
+                <img src="https://www.sport.fr/wp-content/uploads/2022/09/Etoo.jpg" alt="Jean-Claude">
+                <h3>Samuel Eto'o</h3>
+                <p>Investisseur · Cameroun</p>
+            </div>
+        </div>
     </div>
-  </nav>
-</header>
 
-<main>
+    
+    
+    <!-- footer pardon traduit bro-->
+    <footer>
+        <div class="container">
+  <div class="footer-grid">
+      <div class="footer-col"><h3>AfriConnect Summit</h3><p>15-17 sept 2026 · Dakar</p></div>
+         <div class="footer-col"><h3>Navigation</h3><ul><li><a href="index.html">Accueil</a></li><li><a href="programme.html">Programme</a></li><li><a href="intervenants.html">Intervenants</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+  <div class="footer-col"><h3>Suivez-nous</h3><div class="social-icons"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-twitter-x"></i></a><a href="#"><i class="bi bi-linkedin"></i></a><a href="#"><i class="bi bi-youtube"></i></a></div></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; <span class="current-year">2026</span> AfriConnect Summit. Tous droits réservés.</p></div>
+        </div>
+    </footer>
 
-<section class="inner-hero"><h1>Nos intervenants</h1><p>Accueil &gt; Intervenants</p></section>
-<section class="section"><div class="filters"><button class="filter active" data-filter="Tous">Tous</button><button class="filter" data-filter="IA & Tech">IA & Tech</button><button class="filter" data-filter="Business">Business</button><button class="filter" data-filter="Design">Design</button><button class="filter" data-filter="Data">Data</button></div>
-<div class="speaker-grid speakers-list"><article class="speaker-card" data-category="IA & Tech"><div class="avatar">AD</div><h3>Amina Diallo</h3><p>IA & Tech · Sénégal</p></article><article class="speaker-card" data-category="Business"><div class="avatar">JK</div><h3>Jean Koffi</h3><p>Business · Côte d'Ivoire</p></article><article class="speaker-card" data-category="Design"><div class="avatar">SM</div><h3>Sarah Mensah</h3><p>Design · Ghana</p></article><article class="speaker-card" data-category="Data"><div class="avatar">DO</div><h3>David Okoro</h3><p>Data · Nigeria</p></article><article class="speaker-card" data-category="IA & Tech"><div class="avatar">GW</div><h3>Grace Wanjiku</h3><p>IA & Tech · Kenya</p></article><article class="speaker-card" data-category="Business"><div class="avatar">KM</div><h3>Kwame Mensah</h3><p>Business · Ghana</p></article><article class="speaker-card" data-category="Data"><div class="avatar">OB</div><h3>Ousmane Ba</h3><p>Data · Sénégal</p></article><article class="speaker-card" data-category="Design"><div class="avatar">FN</div><h3>Fatou Ndiaye</h3><p>Design · Sénégal</p></article><article class="speaker-card" data-category="IA & Tech"><div class="avatar">NH</div><h3>Nadia Hassan</h3><p>IA & Tech · Égypte</p></article></div></section>
+    
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut"><i class="bi bi-chevron-up"></i></button>
 
-</main>
-
-<footer class="site-footer">
-  <div><h3>AfriConnect Summit</h3><p>Le rendez-vous de l'innovation africaine.</p></div>
-  <div><h3>Liens rapides</h3><a href="programme.html">Programme</a><a href="intervenants.html">Intervenants</a></div>
-  <div><h3>Réseaux sociaux</h3><p>LinkedIn · Instagram · X</p></div>
-  <p class="copyright">© <span id="current-year"></span> AfriConnect Summit 2026</p>
-</footer>
-<button id="back-to-top" class="back-to-top" aria-label="Retour en haut">↑</button>
-
-<script src="js/main.js"></script>
-<script src="js/intervenants.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,65 +1,216 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="no-js">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accueil | AfriConnect Summit 2026</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AfriConnect Summit 2026 : le plus grand rassemblement tech francophone, 15-17 septembre 2026 à Dakar." />
+    <title>AfriConnect Summit 2026</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script>document.documentElement.classList.replace('no-js','js');</script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="site-header">
-  <nav class="navbar">
-    <a class="logo" href="index.html">AfriConnect Summit 2026</a>
-    <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
-    <div class="nav-links">
-      <a href="index.html">Accueil</a>
-      <a href="programme.html">Programme</a>
-      <a href="intervenants.html">Intervenants</a>
-      <a href="contact.html">Contact</a>
-      <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">☾</button>
+    <!-- navbar  -->
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo" aria-label="AfriConnect Summit — retour à l'accueil">
+         <svg class="logo-mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                    <line class="lm-link" x1="20" y1="20" x2="8" y2="30" />
+           <line class="lm-link" x1="20" y1="20" x2="32" y2="30" />
+              <line class="lm-link" x1="20" y1="20" x2="20" y2="7" />
+     <circle class="lm-node" cx="8" cy="30" r="4" />
+             <circle class="lm-node" cx="32" cy="30" r="4" />
+                    <circle class="lm-node" cx="20" cy="7" r="4" />
+              <circle class="lm-node lm-hub" cx="20" cy="20" r="5.5" />
+                   </svg>
+      <span class="logo-text">
+                    <span class="logo-wordmark"><span class="logo-afri">Afri</span>Connect</span>
+                    <span class="logo-tagline">Summit · 2026</span>
+     </span>
+  </a>
+            <nav aria-label="Navigation principale">
+        <ul class="nav-links" id="navLinks">
+             <li><a href="index.html" class="active" aria-current="page">Accueil</a></li>
+                    <li><a href="programme.html">Programme</a></li>
+              <li><a href="intervenants.html">Intervenants</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                <li>
+                        <button class="theme-toggle" id="themeToggle" aria-label="Basculer le mode sombre">
+                            <i class="bi bi-moon-fill"></i>
+                        </button>
+            </li>
+         </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+<!-- hero -->
+                 <section class="hero" id="accueil">
+    <canvas class="hero-canvas" data-max-particles="70" aria-hidden="true"></canvas>
+                    <div class="hero-content">
+    <span class="hero-eyebrow"><i class="bi bi-calendar-event"></i> 15–17 Septembre 2026 · Dakar, Sénégal</span>
+                <h1>L'avenir de la tech <br>se construit en <span class="accent-word">Afrique</span></h1>
+            <p>Rejoignez le plus grand rassemblement de <span id="typewriter" class="typewriter-word"></span> tech francophones du continent.</p>
+    <div class="countdown">
+                <div class="countdown-item"><span id="days">00</span><small>Jours</small></div>
+      <div class="countdown-item"><span id="hours">00</span><small>Heures</small></div>
+                <div class="countdown-item"><span id="minutes">00</span><small>Minutes</small></div>
+                                     <div class="countdown-item"><span id="seconds">00</span><small>Secondes</small></div>
+ </div>
+                     <div class="cta-buttons">
+      <a href="contact.html" class="btn btn-primary">S'inscrire</a>
+                <a href="programme.html" class="btn btn-outline">Voir le programme</a>
+                         </div>
+                            </div>
+                    <a href="#chiffres" class="scroll-cue" aria-label="Défiler vers la suite"><i class="bi bi-chevron-down"></i></a>
+                 </section>
+
+    <!-- chiffre clé -->
+        <section class="container fade-in" id="chiffres">
+        <h2 class="section-title">AfriConnect en chiffres</h2>
+             <div class="stats-grid">
+                     <div class="stat-item">
+                <span class="stat-number" data-target="1200" data-suffix="+">0</span>
+                     <span class="stat-label">Participants</span>
+                               </div>
+             <div class="stat-item">
+                <span class="stat-number" data-target="48" data-suffix="">0</span>
+                <span class="stat-label">Intervenants</span>
+                         </div>
+    <div class="stat-item">
+                <span class="stat-number" data-target="3" data-suffix="">0</span>
+                <span class="stat-label">Jours d'innovation</span>
+            </div>
+     <div class="stat-item">
+                <span class="stat-number" data-target="12" data-suffix="+">0</span>
+         <span class="stat-label">Pays représentés</span>
+            </div>
+     </div>
+    </section>
+
+<!-- why participer ?  -->
+    <section class="container slide-in">
+        <h2 class="section-title">Pourquoi participer ?</h2>
+        <div class="reasons">
+     <div class="reason">
+       <i class="bi bi-people-fill"></i>
+                <h3>Networking d'exception</h3>
+                <p>Rencontrez les acteurs majeurs de la tech africaine et créez des opportunités uniques.</p>
+            </div>
+            <div class="reason">
+                <i class="bi bi-lightbulb-fill"></i>
+       <h3>Innovation de pointe</h3>
+                <p>Découvrez les dernières tendances et technologies qui façonnent l'avenir du continent.</p>
+     </div>
+        <div class="reason">
+                <i class="bi bi-graph-up-arrow"></i>
+     <h3>Accélérez votre carrière</h3>
+                         <p>Ateliers pratiques, conférences inspirantes et opportunités de recrutement.</p>
     </div>
-  </nav>
-</header>
+        </div>
+    </section>
 
-<main>
+    <!-- Les intervenants -->
+    <section class="container zoom-in">
+        <h2 class="section-title">Intervenants vedettes</h2>
+        <div class="speakers-grid">
+            <!-- Carte 1 -->
+            <div class="speaker-card" data-theme="ai">
+                <img src="https://www.chrhautesenne.be/sites/default/files/styles/large/public/2025-02/Diallo_Aissatou.jpg.webp?h=fc3f5e47&itok=AjhcNFgK" alt="Photo de Dr. Amina Diallo">
+                <h3>Dr. Filematou DIALLO</h3>
+                <p>IA & Data Science · Sénégal</p>
+                <a href="intervenants.html" class="btn btn-primary">Voir</a>
+            </div>
+            <!-- Carte 2 -->
+            <div class="speaker-card" data-theme="business">
+                <img src="https://diggers.news/wp-content/uploads/2025/05/Dr-Sega-e1746857872665.jpeg" alt="Photo de Mamadou Koné">
+                <h3>Dr. Robert</h3>
+                <p>Entrepreneur tech · Senegal</p>
+                <a href="intervenants.html" class="btn btn-primary">Voir</a>
+            </div>
+            <!-- Carte 3 -->
+            <div class="speaker-card" data-theme="design">
+                <img src="https://global.ariseplay.com/amg/www.arise.tv/uploads/2021/02/Abdulsamad-Rabiu.jpg" alt="Photo de Fatima El Idrissi">
+                <h3>Oumar DIAW</h3>
+                <p>Design UX/UI · Maroc</p>
+                <a href="intervenants.html" class="btn btn-primary">Voir</a>
+            </div>
+            <!-- Carte 4 -->
+            <div class="speaker-card" data-theme="data">
+                <img src="https://senegal7.com/wp-content/uploads/2025/03/Le-Senegal-magnifie-le-theme-de-la-Journee-Mondiale.jpg" alt="Photo de Cheick Oumar">
+                <h3>Cheick Oumar</h3>
+                <p>Data Analytics · Mali</p>
+                <a href="intervenants.html" class="btn btn-primary">Voir</a>
+            </div>
+        </div>
+    </section>
 
-<section class="hero">
-  <div class="hero-content reveal fade-in">
-    <p class="eyebrow">15 — 17 OCTOBRE 2026 · DAKAR, SÉNÉGAL</p>
-    <h1>L'Afrique innove.<br>L'Afrique connecte.</h1>
-    <p>Le sommet qui rassemble les talents, les idées et les technologies qui construisent l'Afrique de demain.</p>
-    <div class="cta-group"><a class="btn" href="programme.html">Découvrir le programme</a><a class="btn secondary" href="contact.html">S'inscrire maintenant</a></div>
-    <div id="countdown" class="countdown"><div><strong id="days">00</strong><span>Jours</span></div><div><strong id="hours">00</strong><span>Heures</span></div><div><strong id="minutes">00</strong><span>Minutes</span></div><div><strong id="seconds">00</strong><span>Secondes</span></div></div>
-  </div>
-</section>
-<section class="section reveal"><h2>AfriConnect en chiffres</h2><div class="stats-grid">
-  <div class="stat-card"><strong class="counter" data-target="1200">0</strong><span>Participants</span></div>
-  <div class="stat-card"><strong class="counter" data-target="48">0</strong><span>Intervenants</span></div>
-  <div class="stat-card"><strong class="counter" data-target="3">0</strong><span>Jours</span></div>
-  <div class="stat-card"><strong class="counter" data-target="12">0</strong><span>Pays</span></div>
-</div></section>
-<section class="section reveal"><h2>Pourquoi participer ?</h2><div class="features"><article>🤝<h3>Réseautage</h3><p>Rencontrez les talents et décideurs africains.</p></article><article>💡<h3>Innovation</h3><p>Découvrez les technologies qui transforment le continent.</p></article><article>🚀<h3>Opportunités</h3><p>Développez vos projets et votre carrière.</p></article></div></section>
-<section class="section reveal"><h2>Intervenants vedettes</h2><div class="speaker-grid">
-  <article class="speaker-card"><div class="avatar">AD</div><h3>Amina Diallo</h3><p>IA & Innovation · Sénégal</p></article>
-  <article class="speaker-card"><div class="avatar">JK</div><h3>Jean Koffi</h3><p>Business · Côte d'Ivoire</p></article>
-  <article class="speaker-card"><div class="avatar">SM</div><h3>Sarah Mensah</h3><p>Design · Ghana</p></article>
-  <article class="speaker-card"><div class="avatar">PN</div><h3>Peter N'Diaye</h3><p>Cybersecurity · Sénégal</p></article>
-</div><a class="btn" href="intervenants.html">Voir tous les intervenants</a></section>
-<section class="section reveal"><h2>Nos sponsors</h2><div class="sponsors"><div class="sponsor gold">OR</div><div class="sponsor silver">ARGENT</div><div class="sponsor bronze">BRONZE</div></div></section>
+    <!-- Sponsors-->
+    <section class="container">
+        <h2 class="section-title">Nos sponsors</h2>
+        <div class="sponsors">
+            <div class="sponsor gold">
+                <img src="https://i0.wp.com/pastef.org/wp-content/uploads/2020/01/Logo-Pastef-01.png?resize=1024%2C576&ssl=1" alt="Sponsor Or">
+            </div>
+            <div class="sponsor silver">
+                <img src="https://s.rfi.fr/media/display/ed44f02a-c239-11ec-b0fc-005056bf8594/w:980/p:16x9/wave-senegal-mobile-money.png" alt="Sponsor Argent">
+            </div>
+            <div class="sponsor bronze">
+                <img src="https://media.licdn.com/dms/image/v2/D5612AQGDS7RxeH7oYg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1732199007458?e=2147483647&v=beta&t=pcN7pC9khEKmROkFY8ktlH1fE3T2nJt5a-Lr2YK0wtw" alt="Sponsor Bronze">
+            </div>
+        </div>
+    </section>
 
-</main>
+    <!-- footer traduiser vous meme en français -->
+    <footer>
+        <div class="container">
+                            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>AfriConnect Summit</h3>
+             <p>15-17 septembre 2026<br>Dakar, Sénégal</p>
+                </div>
+                    <div class="footer-col">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="programme.html">Programme</a></li>
+                        <li><a href="intervenants.html">Intervenants</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Suivez-nous</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                          <a href="#"><i class="bi bi-youtube"></i></a>
+                       </div>
+                  </div>
+              </div>
+            <div class="footer-bottom">
+                <p>&copy; <span class="current-year">2026</span> AfriConnect Summit. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
 
-<footer class="site-footer">
-  <div><h3>AfriConnect Summit</h3><p>Le rendez-vous de l'innovation africaine.</p></div>
-  <div><h3>Liens rapides</h3><a href="programme.html">Programme</a><a href="intervenants.html">Intervenants</a></div>
-  <div><h3>Réseaux sociaux</h3><p>LinkedIn · Instagram · X</p></div>
-  <p class="copyright">© <span id="current-year"></span> AfriConnect Summit 2026</p>
-</footer>
-<button id="back-to-top" class="back-to-top" aria-label="Retour en haut">↑</button>
+    <!-- tapoter mon WHATSAPP FLOTTANT  -->
+    <a class="whatsapp-float" href="https://wa.me/221771234567?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20AfriConnect%20Summit%202026" target="_blank" rel="noopener" aria-label="Discuter sur WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
 
-<script src="js/main.js"></script>
+    <!-- tu peux traaduire en français si tu ne comprend pas bro : BACK TO TOP -->
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut"><i class="bi bi-chevron-up"></i></button>
 
+    <script src="js/main.js"></script>
 </body>
 </html>
